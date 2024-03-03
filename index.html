@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="/estilo/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="imagem/Frame 6.png" alt="logo do alura">
+    </header>
+
+    <main class="main-container">
+        <section class="container-input">
+
+            <div class="container-Text">
+            
+                <textarea class="input" id="input--texto" placeholder="Digite seu texto"></textarea>
+                
+                <div class="container--bnt">
+                    <div class="observacao">
+                        <img src="imagem/icons8-ponto-de-exclamação-20.png"
+                            alt="logo de ponto de exclamação">
+                        <span>Apenas letras minúsculas e sem acentos!</span>
+                    </div>
+
+                    <div class="buttons">
+                        <button onclick="criptografar()" class="bnt--criptografar">Criptografar</button>
+                        <button onclick="descriptografar()" class="bnt--descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="output">
+                <div id="output--text">
+                    <img src="imagem/High quality products 1 1.png" alt="imagem de buscar">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div id="buttonCopiar">
+                    <button id="btnCopiar" onclick="copiar()" class="bnt--copiar" hidden>Copiar</button>
+                </div>
+
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="\interacao\script.js"></script>
+</body>
+
+</html>
