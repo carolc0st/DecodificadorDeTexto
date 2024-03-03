@@ -1,11 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
- 
 
 
 :root {
     --corPrincipal: #0a3871;
-    --corSecundaria:#495057;
+    --corSecundaria: #495057;
     --corTerciaria: #343A40;
     --corQuartenaria: #F3F5FC;
     --corPentenaria: white;
@@ -17,7 +15,7 @@ body {
     background-color: var(--corQuartenaria);
 }
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: var(--fontInter);
@@ -54,29 +52,31 @@ body {
     box-shadow: none;
     border: none;
     outline: 0;
-    text-transform:lowercase;
+    text-transform: lowercase;
     display: inline-block;
     min-width: 50px;
     border: 1px #0A3871;
 }
 
-::placeholder{ color: #0A3871;}
+::placeholder {
+    color: #0A3871;
+}
 
-.container-Text{
+.container-Text {
     margin-left: 90px;
     width: auto;
     height: auto;
 }
 
 #output {
-    background-color:var(--corPentenaria);
+    background-color: var(--corPentenaria);
     display: flex;
     flex-direction: column;
     border-radius: 32px;
     width: 400px;
     min-height: 400px;
-    margin-left: 100px;    
-    margin-right: 3%; 
+    margin-left: 100px;
+    margin-right: 3%;
     text-align: center;
     padding-top: 2%;
     margin-bottom: 20px;
@@ -90,10 +90,11 @@ body {
     height: auto;
     padding: 50% 10% 10% 10%;
 }
+
 #output h2 {
     font-size: 24px;
-    color: var(--corTerciaria);  
-    font-weight: 700; 
+    color: var(--corTerciaria);
+    font-weight: 700;
     line-height: 28.8px;
     padding: 10% 5% 0 5%;
 }
@@ -101,7 +102,7 @@ body {
 #output p {
     font-size: 16px;
     color: var(--corSecundaria);
-    font-weight: 400; 
+    font-weight: 400;
     height: 48px;
     text-justify: distribute-all-lines;
     padding: 0% 10% 0 10%;
@@ -115,20 +116,20 @@ body {
     border: none;
     outline: 0;
     padding: 10% 5% 10% 5%;
-    text-transform:lowercase;
+    text-transform: lowercase;
     width: 95%;
-    height: 630px;    
+    height: 630px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     padding: 0 5% 5% 0;
 }
 
-.container--bnt button{
+.container--bnt button {
     border: 2px solid var(--corPrincipal);
     border-radius: 10px;
-    text-decoration: none;    
+    text-decoration: none;
     width: 340px;
     height: 67px;
     margin-right: 40px;
@@ -136,17 +137,17 @@ body {
     cursor: pointer;
 }
 
-.bnt--criptografar{
-    color:var(--corPentenaria);
+.bnt--criptografar {
+    color: var(--corPentenaria);
     background-color: var(--corPrincipal);
 }
 
-.bnt--descriptografar{
-    color:var(--corPrincipal);
+.bnt--descriptografar {
+    color: var(--corPrincipal);
     background-color: var(--corQuartenaria);
 }
 
-#buttonCopiar{
+#buttonCopiar {
     padding: 10% 5% 0 5%;
 }
 
@@ -154,7 +155,7 @@ body {
     border: 2px solid var(--corPrincipal);
     border-radius: 10px;
     text-decoration: none;
-    color:var(--corPrincipal);
+    color: var(--corPrincipal);
     width: 340px;
     height: 67px;
     background-color: var(--corPentenaria);
@@ -162,7 +163,7 @@ body {
     cursor: pointer;
 }
 
- button:hover {
+button:hover {
     width: Fixed (328px);
     height: Hug (67px);
     padding: 24px;
@@ -184,33 +185,33 @@ body {
     padding-bottom: 1%;
 }
 
-.observacao img{    
+.observacao img {
     vertical-align: middle;
     display: inline-block;
 }
 
 
-
+/* Style para tablet */
 @media (max-width: 770px) {
 
-    .container-input{
+    .container-input {
         display: block;
-        padding: 0 0 0 3%;        
+        padding: 0 0 0 3%;
     }
-    
-    .container-Text{
-        margin-left: 20px;        
+
+    .container-Text {
+        margin-left: 20px;
     }
 
     .container--bnt button {
         margin-right: 0;
     }
-    .bnt--descriptografar{
+
+    .bnt--descriptografar {
         margin-left: 15px;
     }
 
     #output {
-        /* min-height: 20px; */
         display: flex;
         width: 92%;
         text-align: center;
@@ -218,24 +219,24 @@ body {
         padding: 5% 0 0 0;
     }
 
-    #output h2{
+    #output h2 {
         padding: 5% 0 0 0;
     }
 
-    #output p{
+    #output p {
         padding: 0 0 0 0;
     }
 
-    #output img{
+    #output img {
         display: none;
     }
 
-    .outputText{
+    .outputText {
         padding: 5% 5% 0 5%;
         width: 90%;
     }
 
-    #buttonCopiar{
+    #buttonCopiar {
         padding: 5% 5% 5% 5%;
         margin-bottom: 5%;
     }
@@ -243,11 +244,13 @@ body {
     .bnt--copiar {
         width: 600px;
     }
-    
+
 }
+
+/* Style para Mobile */
 @media (max-width: 380px) {
 
-    .container-input{
+    .container-input {
         display: block;
         width: auto;
         margin-left: 0;
@@ -259,16 +262,16 @@ body {
         height: 260px;
     }
 
-    .container--bnt button{        
+    .container--bnt button {
         width: 100%;
     }
 
-    .buttons{        
+    .buttons {
         display: block;
         margin-bottom: 10px;
     }
 
-    .bnt--descriptografar{
+    .bnt--descriptografar {
         margin-top: 10px;
         margin-left: 0;
     }
@@ -277,19 +280,19 @@ body {
         min-height: 20px;
         display: flex;
         width: 90%;
-        text-align: center;        
+        text-align: center;
     }
 
-    #output p{
+    #output p {
         padding: 0 5% 0 5%;
     }
 
-    .outputText{
+    .outputText {
         padding: 5% 5% 0 5%;
         width: 90%;
     }
 
-    #buttonCopiar{
+    #buttonCopiar {
         padding: 5% 5% 5% 5%;
         margin-bottom: 5%;
     }
@@ -297,5 +300,5 @@ body {
     .bnt--copiar {
         width: 100%;
     }
-    
+
 }

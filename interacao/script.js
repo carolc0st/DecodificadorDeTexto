@@ -21,11 +21,10 @@ function descriptografar() {
 
 }
 
-
 function copiar() {
     var textoCop = document.getElementById('input--texto2');
 
     textoCop.select();
     document.execCommand('copy');
-    
+
 }
